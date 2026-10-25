@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zane 赞恩 对玛奇玛小姐的私人邀约 · 2026.11.14 上海">
+<title>致玛奇玛小姐 · 一日之约</title>
+<link rel="preload" as="image" href="assets/hero.webp" type="image/webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b3121f'/%3E%3C/svg%3E">
+<style>
+  /* 英文字体本地自托管，避免国内网络请求 Google Fonts 造成白屏阻塞 */
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/cg-500-normal-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cg-600-normal-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:swap;src:url('assets/fonts/cg-500-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:swap;src:url('assets/fonts/cg-500-italic-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/cg-500-normal-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cg-600-normal-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  :root{
+    --ink:#0b0708;
+    --ink-2:#130c0e;
+    --ink-3:#1b1013;
+    --crimson:#b3121f;
+    --crimson-deep:#7a0a14;
+    --gold:#c9a227;
+    --gold-light:#e6cf8a;
+    --ivory:#f3ece1;
+    --muted:rgba(243,236,225,.62);
+    --faint:rgba(243,236,225,.38);
+    --hairline:rgba(243,236,225,.14);
+    --serif:"Noto Serif SC","Source Han Serif SC","Noto Serif CJK SC","Songti SC","STSong",serif;
+    --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+    --en:"Cormorant Garamond",Georgia,serif;
+    --ease:cubic-bezier(.32,.72,0,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);
+    color:var(--ivory);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.9;
+    letter-spacing:.02em;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--crimson);color:var(--ivory)}
+  body::after{
+    content:"";position:fixed;inset:0;z-index:70;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+  }
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%;height:auto}
+
+  /* ---------- 浮动玻璃导航 ---------- */
+  nav{
+    position:fixed;top:1.1rem;left:50%;transform:translateX(-50%);
+    z-index:60;display:flex;align-items:center;gap:.4rem;
+    padding:.45rem .55rem .45rem 1.25rem;
+    background:rgba(11,7,8,.55);
+    border:1px solid var(--hairline);
+    border-radius:999px;
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 24px 48px -24px rgba(0,0,0,.8);
+  }
+  nav .brand{font-family:var(--serif);font-weight:600;font-size:.82rem;letter-spacing:.28em;color:var(--gold-light);margin-right:.6rem;white-space:nowrap}
+  nav a{
+    font-size:.78rem;letter-spacing:.14em;color:var(--muted);
+    padding:.42rem .85rem;border-radius:999px;white-space:nowrap;
+    transition:all .5s var(--ease);
+  }
+  nav a:hover{color:var(--ink);background:var(--gold-light)}
+  @media (max-width:640px){nav .brand{display:none}nav{padding:.4rem .5rem}nav a{padding:.5rem .7rem;font-size:.74rem}}
+
+  /* ---------- 封面 ---------- */
+  .hero{
+    min-height:100dvh;display:grid;grid-template-columns:1.15fr .85fr;
+    align-items:center;gap:clamp(2rem,5vw,5rem);
+    padding:8rem clamp(1.5rem,6vw,7rem) 5rem;
+    position:relative;
+    background:
+      radial-gradient(58% 46% at 82% 30%,rgba(179,18,31,.16),transparent 60%),
+      radial-gradient(40% 34% at 8% 84%,rgba(201,162,39,.07),transparent 65%),
+      var(--ink);
+  }
+  .hero-vertical{
+    position:absolute;left:clamp(.7rem,2.4vw,2.2rem);top:50%;transform:translateY(-50%);
+    writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;
+    font-size:clamp(1rem,2vw,1.35rem);letter-spacing:1.15em;
+    color:var(--gold);opacity:.85;
+  }
+  .hero-vertical::after{content:"";display:block;width:1px;height:4.5rem;margin:1.6rem auto 0;background:linear-gradient(var(--gold),transparent)}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--gold-light);border:1px solid rgba(201,162,39,.35);
+    padding:.5rem 1.1rem;border-radius:999px;margin-bottom:2.2rem;
+    font-family:var(--en);font-style:italic;letter-spacing:.22em;
+  }
+  .eyebrow i{width:4px;height:4px;border-radius:50%;background:var(--crimson);box-shadow:0 0 8px var(--crimson)}
+  .hero h1{
+    font-family:var(--serif);font-weight:900;
+    font-size:clamp(2.6rem,6.4vw,5.2rem);
+    line-height:1.12;letter-spacing:.04em;margin-bottom:.4rem;
+  }
+  .hero h1 .accent{
+    display:block;font-size:clamp(1.7rem,4vw,3.2rem);font-weight:600;margin-top:.5rem;
+    background:linear-gradient(100deg,var(--crimson) 8%,#e0453c 46%,var(--gold) 96%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-meta{
+    display:flex;flex-wrap:wrap;align-items:center;gap:1rem;
+    margin:2.4rem 0 1.8rem;font-family:var(--en);font-size:1.05rem;letter-spacing:.24em;color:var(--muted);
+  }
+  .hero-meta b{color:var(--ivory);font-weight:500}
+  .hero-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--gold)}
+  .hero p.lead{max-width:34rem;color:var(--muted);font-size:1.02rem}
+  .hero p.lead b{color:var(--ivory);font-weight:400;border-bottom:1px solid rgba(179,18,31,.55);padding-bottom:1px}
+  .scroll-hint{
+    position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);
+    font-size:.72rem;letter-spacing:.4em;color:var(--faint);text-align:center;
+  }
+  .scroll-hint::after{content:"";display:block;width:1px;height:2.6rem;margin:.7rem auto 0;background:linear-gradient(var(--gold),transparent);animation:drip 2.6s var(--ease) infinite}
+  @keyframes drip{0%{transform:scaleY(0);transform-origin:top}55%{transform:scaleY(1);transform-origin:top}56%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* 封面图：双嵌套框 */
+  .hero-frame{
+    position:relative;padding:.7rem;border-radius:2rem;
+    background:linear-gradient(160deg,rgba(243,236,225,.1),rgba(243,236,225,.02));
+    border:1px solid var(--hairline);
+    box-shadow:0 40px 90px -40px rgba(0,0,0,.9),0 0 120px -30px rgba(179,18,31,.35);
+    transform:rotate(1.6deg);
+  }
+  .hero-frame .inner{
+    border-radius:calc(2rem - .7rem);overflow:hidden;position:relative;
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.14);
+  }
+  .hero-frame img{width:100%;height:clamp(420px,66vh,640px);object-fit:cover;object-position:top center}
+  .hero-frame .tag{
+    position:absolute;right:-.6rem;bottom:1.6rem;z-index:5;
+    background:var(--crimson);color:var(--ivory);
+    font-family:var(--serif);font-weight:600;font-size:.78rem;letter-spacing:.3em;
+    padding:.55rem 1rem .55rem 1.35rem;border-radius:999px 0 0 999px;
+    box-shadow:0 14px 30px -12px rgba(179,18,31,.7);
+  }
+
+  /* ---------- 通用节 ---------- */
+  section{padding:clamp(4.5rem,11vw,8.5rem) clamp(1.5rem,6vw,7rem);position:relative}
+  .sec-head{max-width:52rem;margin-bottom:3.5rem}
+  .sec-head .eyebrow{margin-bottom:1.3rem}
+  .sec-head h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.9rem,4.2vw,3.1rem);line-height:1.25;letter-spacing:.03em}
+  .sec-head h2 em{font-style:normal;color:var(--crimson)}
+  .sec-head .sub{margin-top:1.1rem;color:var(--muted);max-width:40rem}
+
+  .chain{display:flex;align-items:center;gap:.8rem;margin:0 auto;width:min(24rem,70%);opacity:.7}
+  .chain::before,.chain::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+  .chain::after{background:linear-gradient(90deg,var(--gold),transparent)}
+  .chain svg{flex:none}
+
+  /* 入场动效 */
+  .reveal{opacity:0;transform:translateY(4rem);filter:blur(6px);transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease)}
+  .reveal.in{opacity:1;transform:none;filter:none}
+  .rise{opacity:0;transform:rotate(1.6deg) translateY(4rem);filter:blur(6px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease),filter 1.1s var(--ease)}
+  .rise.in{opacity:1;transform:rotate(1.6deg);filter:none}
+
+  /* ---------- 卷首语 ---------- */
+  .intro{background:linear-gradient(var(--ink),var(--ink-2))}
+  .letter{
+    max-width:44rem;margin:0 auto;padding:clamp(2.2rem,5vw,3.6rem);
+    background:linear-gradient(165deg,rgba(243,236,225,.055),rgba(243,236,225,.015));
+    border:1px solid var(--hairline);border-radius:2rem;
+    box-shadow:0 40px 90px -50px rgba(0,0,0,.9);
+    font-family:var(--serif);font-weight:600;font-size:clamp(1.02rem,2.2vw,1.18rem);line-height:2.3;
+  }
+  .letter .salute{font-size:1.35em;color:var(--gold-light);display:block;margin-bottom:1.2rem;letter-spacing:.1em}
+  .letter p+p{margin-top:1.4rem}
+  .letter .hl{color:var(--crimson)}
+  .letter .sign{display:block;text-align:right;margin-top:2.4rem;color:var(--muted);font-size:.92em;font-weight:400}
+
+  /* ---------- 路线总览 ---------- */
+  .route{background:var(--ink-2)}
+  .route-map{
+    padding:.7rem;border-radius:2rem;border:1px solid var(--hairline);
+    background:linear-gradient(160deg,rgba(243,236,225,.08),rgba(243,236,225,.02));
+    box-shadow:0 40px 90px -50px rgba(0,0,0,.9);
+    max-width:min(52rem, calc(84vh * .667));margin:0 auto 4rem;
+  }
+  .route-map .inner{border-radius:calc(2rem - .7rem);overflow:hidden;box-shadow:inset 0 1px 1px rgba(255,255,255,.12)}
+  .route-map img{width:100%;object-fit:cover}
+  .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;max-width:64rem;margin:0 auto;position:relative}
+  .timeline::before{content:"";position:absolute;top:.62rem;left:4%;right:4%;height:1px;background:linear-gradient(90deg,var(--crimson),var(--gold),var(--crimson));opacity:.5}
+  .tl-item{padding:2rem .8rem 0;text-align:center;position:relative}
+  .tl-item::before{content:"";position:absolute;top:.28rem;left:50%;transform:translateX(-50%);width:9px;height:9px;border-radius:50%;background:var(--ink);border:1px solid var(--gold)}
+  .tl-item .t{font-family:var(--en);font-size:1.02rem;letter-spacing:.1em;color:var(--gold-light)}
+  .tl-item .n{font-family:var(--serif);font-weight:600;font-size:.92rem;margin-top:.45rem;line-height:1.5}
+  .tl-item .d{font-size:.72rem;color:var(--faint);margin-top:.3rem;line-height:1.6}
+  @media (max-width:860px){
+    .timeline{grid-template-columns:1fr 1fr 1fr;gap:1.4rem 0}
+    .timeline::before{display:none}
+    .tl-item{padding-top:1.2rem}
+    .tl-item::before{top:.2rem}
+  }
+  @media (max-width:520px){.timeline{grid-template-columns:1fr 1fr}}
+
+  /* ---------- 背景板站点 ---------- */
+  .board{
+    min-height:96vh;display:flex;align-items:center;
+    padding:7rem clamp(1.5rem,6vw,7rem);
+    background-size:cover;background-position:center;
+    background-attachment:fixed;
+  }
+  .board::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--ink) 34%,rgba(11,7,8,.82) 52%,rgba(11,7,8,.28) 100%)}
+  .board>*{position:relative;z-index:2}
+  #stop-1933{background-image:url("assets/bg-1933.jpg");background-image:image-set(url("assets/bg-1933.webp") type("image/webp"),url("assets/bg-1933.jpg") type("image/jpeg"))}
+  #stop-museum{background-image:url("assets/bg-museum.jpg");background-image:image-set(url("assets/bg-museum.webp") type("image/webp"),url("assets/bg-museum.jpg") type("image/jpeg"))}
+  @media (max-width:900px){.board{background-attachment:scroll}.board::before{background:linear-gradient(180deg,rgba(11,7,8,.55),rgba(11,7,8,.92) 62%)}}
+
+  .stop-card{
+    width:min(46rem,100%);padding:.75rem;border-radius:2.2rem;
+    background:linear-gradient(165deg,rgba(17,11,13,.94),rgba(11,7,8,.88));
+    border:1px solid var(--hairline);
+    box-shadow:0 50px 110px -50px rgba(0,0,0,.95);
+  }
+  .stop-card>.inner{
+    border-radius:calc(2.2rem - .75rem);padding:clamp(1.8rem,4vw,3rem);
+    background:linear-gradient(170deg,rgba(27,16,19,.5),rgba(11,7,8,.35));
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.07);
+  }
+  .stop-no{
+    display:flex;align-items:baseline;gap:1rem;margin-bottom:1.1rem;
+    font-family:var(--en);font-style:italic;font-size:1.05rem;letter-spacing:.2em;color:var(--gold-light);
+  }
+  .stop-no .time{
+    font-family:var(--en);font-style:normal;font-size:1.5rem;letter-spacing:.12em;color:var(--ivory);
+  }
+  .stop-no .zh{font-family:var(--serif);font-style:normal;font-weight:600;color:var(--crimson);font-size:1rem;letter-spacing:.34em}
+  .stop-card h3{font-family:var(--serif);font-weight:900;font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:.03em;line-height:1.2}
+  .stop-addr{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin:1.1rem 0 1.6rem;font-size:.85rem;color:var(--muted);letter-spacing:.06em}
+  .stop-addr span{display:inline-flex;align-items:center;gap:.45rem}
+  .stop-addr i{width:5px;height:5px;border-radius:50%;background:var(--crimson);flex:none}
+  .stop-desc{color:var(--muted);font-size:1rem;max-width:36rem}
+  .stop-desc b{color:var(--ivory);font-weight:400}
+
+  .badge-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+  .badge{
+    font-size:.74rem;letter-spacing:.14em;color:var(--gold-light);
+    border:1px solid rgba(201,162,39,.4);border-radius:999px;padding:.42rem 1rem;
+    background:rgba(201,162,39,.06);
+  }
+  .badge.red{color:#ff8f8f;border-color:rgba(179,18,31,.5);background:rgba(179,18,31,.1)}
+
+  /* 午餐卡 */
+  .lunch{
+    margin-top:2.2rem;display:grid;grid-template-columns:.9fr 1.1fr;gap:0;
+    border-radius:1.6rem;overflow:hidden;border:1px solid var(--hairline);
+    background:linear-gradient(160deg,rgba(243,236,225,.05),rgba(243,236,225,.015));
+  }
+  .lunch .pic{min-height:13rem}
+  .lunch .pic img{width:100%;height:100%;object-fit:cover}
+  .lunch .txt{padding:1.6rem 1.8rem}
+  .lunch h4{font-family:var(--serif);font-weight:600;font-size:1.15rem;letter-spacing:.06em;display:flex;align-items:center;gap:.7rem}
+  .lunch h4 .t{font-family:var(--en);color:var(--gold-light);font-size:.95rem;letter-spacing:.16em}
+  .lunch .shop{display:flex;align-items:center;flex-wrap:wrap;gap:.8rem;margin-top:1.15rem}
+  .lunch .shop b{font-family:var(--serif);font-weight:900;font-size:1.4rem;letter-spacing:.05em;color:var(--ivory);line-height:1.2}
+  .lunch .shop .shop-tag{font-size:.7rem;color:var(--gold-light);border:1px solid rgba(201,162,39,.42);border-radius:999px;padding:.22rem .75rem;letter-spacing:.12em;white-space:nowrap;background:rgba(201,162,39,.07)}
+  .lunch .shop-meta{margin-top:.5rem;font-size:.78rem;color:var(--faint);letter-spacing:.1em}
+  .lunch .dishes{margin-top:1.05rem;padding-top:1.05rem;border-top:1px dashed rgba(243,236,225,.14);font-size:.87rem;color:var(--muted);line-height:2}
+  .lunch .dishes b{color:var(--crimson);font-weight:400;border-bottom:1px solid rgba(179,18,31,.5);padding-bottom:1px}
+  .lunch .note{margin-top:1rem;font-size:.8rem;color:var(--gold-light);letter-spacing:.08em}
+  @media (max-width:640px){.lunch{grid-template-columns:1fr}.lunch .pic{max-height:11rem}}
+
+  /* ---------- Citywalk 叠卡 ---------- */
+  .walk{background:linear-gradient(var(--ink-2),var(--ink))}
+  .walk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;max-width:76rem;margin:0 auto}
+  .walk-card{
+    padding:.6rem;border-radius:1.8rem;border:1px solid var(--hairline);
+    background:linear-gradient(165deg,rgba(243,236,225,.07),rgba(243,236,225,.02));
+    box-shadow:0 40px 80px -45px rgba(0,0,0,.9);
+    transition:transform .8s var(--ease),box-shadow .8s var(--ease);
+  }
+  .walk-card:nth-child(1){transform:rotate(-1.4deg)}
+  .walk-card:nth-child(2){transform:rotate(.8deg) translateY(1.6rem)}
+  .walk-card:nth-child(3){transform:rotate(-.6deg)}
+  .walk-card:hover{transform:rotate(0) translateY(-.8rem);box-shadow:0 55px 100px -45px rgba(0,0,0,.95),0 0 60px -20px rgba(179,18,31,.3)}
+  .walk-card .inner{border-radius:calc(1.8rem - .6rem);overflow:hidden;background:var(--ink-3);box-shadow:inset 0 1px 1px rgba(255,255,255,.08)}
+  .walk-card .pic{position:relative;aspect-ratio:4/3.4;overflow:hidden}
+  .walk-card .pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+  .walk-card:hover .pic img{transform:scale(1.045)}
+  .walk-card .pic.placeholder{
+    display:grid;place-items:center;
+    background:
+      repeating-linear-gradient(45deg,rgba(243,236,225,.025) 0 14px,transparent 14px 28px),
+      linear-gradient(160deg,var(--ink-3),var(--ink-2));
+  }
+  .walk-card .pic.placeholder .ph{
+    display:flex;flex-direction:column;align-items:center;gap:.7rem;
+    color:var(--faint);font-size:.8rem;letter-spacing:.32em;text-indent:.32em;
+  }
+  .walk-card .pic.placeholder .ph svg{opacity:.6}
+  .walk-card .pic.placeholder .ph .ph-sub{font-size:.68rem;letter-spacing:.24em;opacity:.75;text-indent:.24em}
+  .walk-card .pic .no{
+    position:absolute;left:1rem;top:1rem;z-index:2;
+    font-family:var(--en);font-style:italic;font-size:.95rem;letter-spacing:.18em;
+    background:rgba(11,7,8,.6);border:1px solid var(--hairline);color:var(--gold-light);
+    padding:.3rem .8rem;border-radius:999px;backdrop-filter:blur(8px);
+  }
+  .walk-card .txt{padding:1.5rem 1.6rem 1.7rem}
+  .walk-card .t{font-family:var(--en);font-size:.98rem;letter-spacing:.16em;color:var(--gold-light)}
+  .walk-card h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;letter-spacing:.04em;margin:.35rem 0 .55rem}
+  .walk-card .addr{font-size:.76rem;color:var(--faint);letter-spacing:.06em;margin-bottom:.9rem}
+  .walk-card p{font-size:.86rem;color:var(--muted);line-height:1.9}
+  @media (max-width:960px){.walk-grid{grid-template-columns:1fr;max-width:30rem}.walk-card{transform:none!important}}
+
+  /* ---------- 贴士 ---------- */
+  .tips{background:var(--ink)}
+  .tips-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;max-width:64rem;margin:0 auto}
+  .tip{
+    padding:1.9rem 2rem;border-radius:1.6rem;
+    background:linear-gradient(165deg,rgba(243,236,225,.05),rgba(243,236,225,.015));
+    border:1px solid var(--hairline);
+    transition:transform .7s var(--ease),border-color .7s var(--ease);
+  }
+  .tip:hover{transform:translateY(-4px);border-color:rgba(201,162,39,.4)}
+  .tip h4{display:flex;align-items:center;gap:.8rem;font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.1em}
+  .tip h4 .num{
+    width:1.9rem;height:1.9rem;flex:none;display:grid;place-items:center;border-radius:.65rem;
+    border:1px solid rgba(201,162,39,.45);color:var(--gold-light);
+    font-family:var(--serif);font-size:.85rem;
+  }
+  .tip p{margin-top:.85rem;font-size:.87rem;color:var(--muted);line-height:1.95}
+  .tip p b{color:var(--ivory);font-weight:400}
+  @media (max-width:720px){.tips-grid{grid-template-columns:1fr}}
+
+  /* ---------- 赴约 ---------- */
+  .rsvp{
+    text-align:center;
+    background:
+      radial-gradient(46% 40% at 50% 30%,rgba(179,18,31,.14),transparent 65%),
+      linear-gradient(var(--ink),var(--ink-2));
+  }
+  .rsvp h2{font-family:var(--serif);font-weight:900;font-size:clamp(2.2rem,5.6vw,4rem);letter-spacing:.06em;line-height:1.3}
+  .rsvp h2 em{font-style:normal;color:var(--crimson)}
+  .rsvp .deadline{margin:1.4rem 0 2.8rem;color:var(--muted);font-size:.95rem;letter-spacing:.12em}
+  .cta{
+    display:inline-flex;align-items:center;gap:1.1rem;
+    background:linear-gradient(120deg,var(--crimson),var(--crimson-deep));
+    color:var(--ivory);font-family:var(--serif);font-weight:600;font-size:1.02rem;letter-spacing:.24em;
+    padding:.95rem 1rem .95rem 2.4rem;border-radius:999px;border:1px solid rgba(230,207,138,.35);
+    box-shadow:0 30px 60px -25px rgba(179,18,31,.6);
+    transition:all .6s var(--ease);
+  }
+  .cta .arrow{
+    width:2.5rem;height:2.5rem;border-radius:50%;display:grid;place-items:center;flex:none;
+    background:rgba(11,7,8,.35);border:1px solid rgba(230,207,138,.4);
+    transition:transform .6s var(--ease);
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 40px 80px -25px rgba(179,18,31,.75)}
+  .cta:active{transform:scale(.98)}
+  .cta:hover .arrow{transform:translate(3px,-2px) scale(1.06)}
+  .rsvp .alt{margin-top:1.6rem;font-size:.82rem;color:var(--faint);letter-spacing:.1em}
+  .cta{cursor:pointer;font-family:var(--serif)}
+  .cta .label{display:inline-block}
+  .cta.done{background:linear-gradient(120deg,rgba(179,18,31,.28),rgba(122,10,20,.4));color:var(--gold-light)}
+  .cta.done .arrow{background:rgba(201,162,39,.16);border-color:rgba(201,162,39,.55)}
+
+  /* ---------- 接收邀请弹窗 ---------- */
+  .modal-mask{
+    position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;
+    padding:1.5rem;overflow-y:auto;
+    background:rgba(5,3,4,.66);
+    backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
+    opacity:0;pointer-events:none;transition:opacity .5s var(--ease);
+  }
+  .modal-mask.open{opacity:1;pointer-events:auto}
+  .modal-card{
+    position:relative;width:min(23rem,100%);margin:auto;padding:.65rem;border-radius:2rem;
+    background:linear-gradient(165deg,rgba(243,236,225,.11),rgba(243,236,225,.03));
+    border:1px solid var(--hairline);
+    box-shadow:0 60px 140px -50px rgba(0,0,0,.95),0 0 150px -40px rgba(179,18,31,.55);
+    transform:scale(.9) translateY(2.5rem);opacity:0;
+    transition:transform .7s var(--ease),opacity .55s var(--ease);
+  }
+  .modal-mask.open .modal-card{transform:none;opacity:1}
+  .modal-body{
+    border-radius:calc(2rem - .65rem);padding:1.45rem 1.4rem 1.35rem;text-align:center;
+    background:linear-gradient(170deg,rgba(27,16,19,.94),rgba(11,7,8,.96));
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.07);
+  }
+  .modal-figure{
+    position:relative;width:min(16rem,74%);margin:0 auto 1.3rem;padding:.38rem;border-radius:1.45rem;overflow:hidden;
+    background:linear-gradient(160deg,rgba(243,236,225,.1),rgba(243,236,225,.02));
+    border:1px solid var(--hairline);
+    box-shadow:0 0 54px -14px rgba(179,18,31,.55);
+  }
+  .modal-figure .inner{border-radius:calc(1.45rem - .38rem);overflow:hidden}
+  .modal-figure img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center 36%}
+  .modal-figure .stamp{
+    position:absolute;right:.55rem;bottom:.55rem;z-index:3;
+    background:var(--crimson);color:var(--ivory);font-family:var(--serif);font-weight:600;
+    font-size:.56rem;letter-spacing:.22em;padding:.3rem .66rem;border-radius:999px;
+    box-shadow:0 12px 26px -10px rgba(179,18,31,.8);
+  }
+  .modal-body h2{font-family:var(--serif);font-weight:900;font-size:1.42rem;letter-spacing:.06em;margin:.8rem 0 .55rem}
+  .modal-body p{font-size:.8rem;color:var(--muted);line-height:1.95}
+  .modal-date-row{display:flex;align-items:center;justify-content:center;gap:.8rem;margin:1.05rem 0 1.25rem;font-family:var(--en);font-size:.84rem;letter-spacing:.22em;color:var(--gold-light)}
+  .modal-date-row::before,.modal-date-row::after{content:"";width:2rem;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+  .modal-date-row::after{background:linear-gradient(90deg,var(--gold),transparent)}
+  .modal-ok{
+    display:inline-flex;align-items:center;gap:.7rem;cursor:pointer;
+    background:linear-gradient(120deg,var(--crimson),var(--crimson-deep));
+    color:var(--ivory);font-family:var(--serif);font-weight:600;font-size:.92rem;letter-spacing:.28em;
+    padding:.75rem 1.9rem;border-radius:999px;border:1px solid rgba(230,207,138,.35);
+    box-shadow:0 24px 50px -22px rgba(179,18,31,.65);
+    transition:all .5s var(--ease);
+  }
+  .modal-ok:hover{transform:translateY(-2px);box-shadow:0 34px 70px -22px rgba(179,18,31,.8)}
+  .modal-close{
+    position:absolute;top:1.15rem;right:1.15rem;z-index:6;
+    width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;cursor:pointer;
+    background:rgba(11,7,8,.5);border:1px solid var(--hairline);color:var(--muted);
+    transition:all .4s var(--ease);
+  }
+  .modal-close:hover{color:var(--gold-light);border-color:rgba(201,162,39,.5);transform:rotate(90deg)}
+  @media (prefers-reduced-motion:reduce){.modal-card{transition:none}}
+  .sign-block{display:flex;align-items:center;justify-content:center;gap:1.6rem;margin-top:4rem}
+  .sign-block .who{font-family:var(--serif);font-size:.95rem;color:var(--muted);letter-spacing:.2em;text-align:right;line-height:2}
+  .seal{
+    width:4.4rem;height:4.4rem;flex:none;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;
+    place-items:center;padding:.45rem;
+    background:var(--crimson);color:var(--ivory);
+    font-family:var(--serif);font-weight:600;font-size:.92rem;line-height:1.1;
+    border-radius:.5rem;transform:rotate(-4deg);
+    box-shadow:0 18px 40px -18px rgba(179,18,31,.75),inset 0 0 0 1px rgba(243,236,225,.25);
+  }
+  footer{
+    padding:2.6rem clamp(1.5rem,6vw,7rem) 3.2rem;border-top:1px solid var(--hairline);
+    display:flex;flex-wrap:wrap;gap:.8rem 2rem;justify-content:space-between;align-items:center;
+    font-size:.74rem;color:var(--faint);letter-spacing:.18em;
+  }
+  footer .f-brand{font-family:var(--en);font-style:italic;letter-spacing:.24em;color:var(--gold);opacity:.8}
+
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr;padding-top:6.5rem;gap:2.6rem}
+    .hero-vertical{display:none}
+    .hero-frame,.hero-frame.rise.in{transform:none;max-width:26rem}
+    .hero-frame img{height:auto;aspect-ratio:auto}
+    .board{padding:5.5rem clamp(1.25rem,5vw,3rem);min-height:auto}
+    .walk-grid{gap:1.2rem}
+  }
+
+  body a,body button{-webkit-tap-highlight-color:transparent}
+  .cta,.modal-ok,.modal-close{touch-action:manipulation}
+
+  /* ---------- 小屏手机（≤480px） ---------- */
+  @media (max-width:480px){
+    section{padding-left:1.15rem;padding-right:1.15rem}
+    .seal{width:3.6rem;height:3.6rem;font-size:.8rem}
+    .modal-body{padding:1.2rem 1.15rem 1.15rem}
+    .modal-body h2{font-size:1.3rem}
+    .modal-figure{width:min(13.5rem,70%);margin-bottom:1.1rem}
+    .walk-card .txt{padding:1.3rem 1.25rem 1.45rem}
+    .tip{padding:1.5rem 1.4rem}
+    .letter{padding:1.6rem 1.4rem;line-height:2.15}
+    .stop-card>.inner{padding:1.4rem 1.2rem}
+    .lunch .txt{padding:1.3rem 1.25rem}
+    .lunch .shop b{font-size:1.25rem}
+    .tl-item{padding-left:.4rem;padding-right:.4rem}
+    .hero h1{letter-spacing:.02em}
+    .sign-block{gap:1.1rem}
+    footer{gap:.6rem 1.2rem;letter-spacing:.12em}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none;filter:none}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="brand">玛奇玛 · 一日之约</span>
+  <a href="#intro">卷首</a>
+  <a href="#route">路线</a>
+  <a href="#stops">行程</a>
+  <a href="#tips">贴士</a>
+  <a href="#rsvp">赴约</a>
+</nav>
+
+<!-- ================= 封面 ================= -->
+<header class="hero">
+  <span class="hero-vertical">邀请函</span>
+  <div>
+    <span class="eyebrow"><i></i>Zane 赞恩 · 对玛奇玛小姐的私人邀约<i></i></span>
+    <h1>致玛奇玛小姐<span class="accent">的一日之约</span></h1>
+    <div class="hero-meta">
+      <b>2026 · 11 · 14</b><span class="dot"></span>星期六<span class="dot"></span><b>上海</b><span class="dot"></span>五站 · 从晨光到夜色
+    </div>
+    <p class="lead">从 <b>1933老场坊</b>的清水混凝土光影，到<b>自然博物馆</b>的恐龙与鲸鲨；从南京西路上的巨轮与咖啡香，到<b>张园</b>砖红色的暮色。一天，全部安排妥当——你只需准时出现。</p>
+  </div>
+  <div class="hero-frame rise">
+    <div class="inner"><picture><source srcset="assets/hero.webp" type="image/webp"><img src="assets/hero.jpg" alt="玛奇玛风格封面插画" width="1000" height="1457" decoding="async" fetchpriority="high"></picture></div>
+    <span class="tag">MAKIMA ONLY</span>
+  </div>
+  <span class="scroll-hint">向下展开行程</span>
+</header>
+
+<!-- ================= 卷首语 ================= -->
+<section class="intro" id="intro">
+  <div class="sec-head reveal" style="margin:0 auto 3rem;text-align:center">
+    <span class="eyebrow"><i></i>Prologue · 卷首语<i></i></span>
+    <h2>见字如面</h2>
+  </div>
+  <div class="letter reveal">
+    <span class="salute">玛奇玛小姐：</span>
+    <p>上海的深秋恰好，风里还留着一点桂花的余味。我替你选好了一条路：上午在 <span class="hl">1933老场坊</span>的廊桥与光影里散步，在附近吃一顿慢的午餐；午后去<span class="hl">自然博物馆</span>看恐龙和鲸鲨；傍晚沿着南京西路，走过巨轮、闻过咖啡香，最后在<span class="hl">张园</span>砖红色的暮色里吃晚饭。</p>
+    <p>听说你习惯一切尽在掌握——那么这一天，请把自己交给我安排。攻略我做，路线我排，票我订，位子我留。你不需要做任何决定。</p>
+    <p>你只需准时出现。</p>
+    <span class="sign">—— Zane 赞恩 · 谨上</span>
+  </div>
+</section>
+
+<!-- ================= 路线总览 ================= -->
+<section class="route" id="route">
+  <div class="sec-head reveal" style="margin:0 auto 3.5rem;text-align:center">
+    <span class="eyebrow"><i></i>The Route · 路线总览<i></i></span>
+    <h2>一日 <em>五站</em></h2>
+    <p class="sub" style="margin:1.1rem auto 0">松江出发，先去虹口，静安收工。上午与下午各有一处重头戏，中间用一顿午餐过渡；傍晚交给 citywalk，慢慢走。</p>
+  </div>
+  <div class="route-map reveal">
+    <div class="inner"><picture><source srcset="assets/route-map.webp" type="image/webp"><img src="assets/route-map.jpg" alt="上海约会路线图" width="900" height="1350" loading="lazy" decoding="async"></picture></div>
+  </div>
+  <div class="timeline reveal">
+    <div class="tl-item"><div class="t">10:00</div><div class="n">1933老场坊</div><div class="d">建筑巡礼 · 周边午餐</div></div>
+    <div class="tl-item"><div class="t">13:30</div><div class="n">上海自然博物馆</div><div class="d">恐龙 · 鲸鲨 · 需预约</div></div>
+    <div class="tl-item"><div class="t">15:45</div><div class="n">路易号 · LV 巨轮</div><div class="d">黄昏里的巨轮</div></div>
+    <div class="tl-item"><div class="t">16:30</div><div class="n">星巴克臻选烘焙工坊</div><div class="d">咖啡与铜罐</div></div>
+    <div class="tl-item"><div class="t">17:30</div><div class="n">张园</div><div class="d">石库门 · 晚餐 · 夜色</div></div>
+  </div>
+</section>
+
+<!-- ================= 第一站：1933 ================= -->
+<section class="board" id="stop-1933">
+  <div class="stop-card reveal">
+    <div class="inner">
+      <div class="stop-no"><span class="time">10:00</span><span class="zh">第一站 · 上午</span></div>
+      <h3>1933老场坊</h3>
+      <div class="stop-addr">
+        <span><i></i>虹口区沙泾路10号</span>
+        <span><i></i>免费开放</span>
+        <span><i></i>建议停留 90 分钟</span>
+      </div>
+      <p class="stop-desc">1933年落成的远东第一大屠宰场，如今是上海最迷人的<b>装饰艺术（Art Deco）建筑</b>之一。清水混凝土外墙、空中廊桥、几何窗格与伞形柱，每一步都是光影的游戏。人少、好拍、适合慢慢走——我会带上相机。</p>
+      <div class="badge-row">
+        <span class="badge">小剧场</span>
+        <span class="badge">空中廊桥</span>
+        <span class="badge">出片率 ★ 高</span>
+      </div>
+      <div class="lunch">
+        <div class="pic"><picture><source srcset="assets/izakaya.webp" type="image/webp"><img src="assets/izakaya.jpg" alt="平成屋居酒屋" width="800" height="1054" loading="lazy" decoding="async"></picture></div>
+        <div class="txt">
+          <h4><span class="t">11:30</span>午餐</h4>
+          <div class="shop"><b>平成屋</b><span class="shop-tag">四川北路店</span></div>
+          <div class="shop-meta">日式居酒屋 · 距老场坊步行约10分钟</div>
+          <p class="dishes">招牌烤串、刺身、锅物俱全，还有那碗<b>乌冬面</b>——就是玛奇玛小姐第一次喂我吃的那种。</p>
+          <div class="note">已提前订位 · 菜单按你的口味调整</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 第二站：自然博物馆 ================= -->
+<section class="board" id="stop-museum">
+  <div class="stop-card reveal">
+    <div class="inner">
+      <div class="stop-no"><span class="time">13:30</span><span class="zh">第二站 · 下午</span></div>
+      <h3>上海自然博物馆</h3>
+      <div class="stop-addr">
+        <span><i></i>静安区山海关路399号 · 静安雕塑公园内</span>
+        <span><i></i>地铁13号线自然博物馆站</span>
+      </div>
+      <p class="stop-desc">螺旋而上的<b>绿色植物墙</b>下，藏着 26 米长的马门溪龙与一整座「生命长河」——鲸鲨从头顶游过，时钟倒回 46 亿年。从起源之谜到演化之道，两个小时刚好走完。周六延长开放至 <b>20:00</b>，我们可以不赶时间。</p>
+      <div class="badge-row">
+        <span class="badge red">需提前预约</span>
+        <span class="badge">提前 7 天实名购票（11月7日 09:00 放票）</span>
+        <span class="badge">门票 ¥30 / 人</span>
+        <span class="badge red">请随身携带身份证原件</span>
+      </div>
+      <p class="stop-desc" style="margin-top:1.6rem;font-size:.88rem">门票我来订，闹钟我来设。你只管出现。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Citywalk ================= -->
+<section class="walk" id="stops">
+  <div class="sec-head reveal" style="margin:0 auto 4rem;text-align:center">
+    <span class="eyebrow"><i></i>Citywalk · 傍晚<i></i></span>
+    <h2>把黄昏<em>走成一条路</em></h2>
+    <p class="sub" style="margin:1.1rem auto 0">出博物馆，沿南京西路向西。三处地标，一次走完——步行都在十五分钟以内。</p>
+  </div>
+  <div class="walk-grid reveal">
+    <div class="walk-card">
+      <div class="inner">
+        <div class="pic"><span class="no">No. 04 · 15:45</span><picture><source srcset="assets/lv-ship.webp" type="image/webp"><img src="assets/lv-ship.jpg" alt="路易号 LV 巨轮" width="900" height="674" loading="lazy" decoding="async"></picture></div>
+        <div class="txt">
+          <div class="t">一艘停在南京西路上的巨轮</div>
+          <h3>路易号</h3>
+          <div class="addr">LV 邮轮巨轮 · 南京西路789号 · 10:00 – 22:00</div>
+          <p>一艘停靠在南京西路上的巨轮——全球唯一的 LV「路易号」。银色船身在黄昏里发光，像整座城市最昂贵的一个梦。替你拍照的那种。</p>
+        </div>
+      </div>
+    </div>
+    <div class="walk-card">
+      <div class="inner">
+        <div class="pic"><span class="no">No. 05 · 16:30</span><picture><source srcset="assets/starbucks.webp" type="image/webp"><img src="assets/starbucks.jpg" alt="星巴克臻选烘焙工坊" width="900" height="642" loading="lazy" decoding="async"></picture></div>
+        <div class="txt">
+          <div class="t">南京西路789号</div>
+          <h3>星巴克臻选烘焙工坊</h3>
+          <div class="addr">全球最大臻选烘焙工坊 · 约 7:00 – 22:00</div>
+          <p>铜罐高耸，管道纵横，空气里全是新鲜烘焙的咖啡香。我给你点一杯当季特调——名字我暂时保密，像今晚的结尾一样。</p>
+        </div>
+      </div>
+    </div>
+    <div class="walk-card">
+      <div class="inner">
+        <div class="pic"><span class="no">No. 06 · 17:30</span><picture><source srcset="assets/zhangyuan.webp" type="image/webp"><img src="assets/zhangyuan.jpg" alt="张园石库门" width="800" height="1012" loading="lazy" decoding="async"></picture></div>
+        <div class="txt">
+          <div class="t">茂名北路258号</div>
+          <h3>张园</h3>
+          <div class="addr">晚清「海上第一名园」· 街区免费</div>
+          <p>石库门的砖红色在暮色里温柔下来。晚餐已订：<b>ORTENSIA 法餐</b>；若想换个口味，备选是大申记本帮菜与鹅岛精酿。饭后就在弄堂里散散步，今晚的最后一站。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 贴士 ================= -->
+<section class="tips" id="tips">
+  <div class="sec-head reveal" style="margin:0 auto 3.5rem;text-align:center">
+    <span class="eyebrow"><i></i>Notes · 温馨提示<i></i></span>
+    <h2>出发前的<em>四件事</em></h2>
+  </div>
+  <div class="tips-grid">
+    <div class="tip reveal">
+      <h4><span class="num">壹</span>预约</h4>
+      <p>自然博物馆需<b>提前 7 天实名预约</b>，11月7日 9:00 放票。我会设好闹钟准时抢票，你只需在当天带好<b>身份证原件</b>。</p>
+    </div>
+    <div class="tip reveal">
+      <h4><span class="num">贰</span>交通</h4>
+      <p>从松江出发：地铁至 <b>4/10号线海伦路站</b>到1933，午餐后<b>打车到自然博物馆</b>（约20分钟）→ 之后沿南京西路步行 citywalk，<b>2/12/13号线南京西路站</b>收尾张园。请穿一双好走的鞋。</p>
+    </div>
+    <div class="tip reveal">
+      <h4><span class="num">叁</span>着装</h4>
+      <p>11月初上海约 <b>18°C</b> 左右，玛奇玛小姐穿自己的衣服，温度刚刚好。</p>
+    </div>
+    <div class="tip reveal">
+      <h4><span class="num">肆</span>弹性</h4>
+      <p>如果下雨，就改为和玛奇玛小姐一起<b>撸猫</b>。走路走累了，随时说。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 赴约 ================= -->
+<section class="rsvp" id="rsvp">
+  <div class="chain reveal" style="margin-bottom:3.5rem">
+    <svg width="26" height="12" viewBox="0 0 26 12" fill="none" stroke="#c9a227" stroke-width="1"><rect x="1" y="2" width="9" height="8" rx="2"/><rect x="10" y="1" width="9" height="10" rx="2" transform="rotate(12 14 6)"/><rect x="18" y="2" width="7" height="8" rx="2"/></svg>
+  </div>
+  <h2 class="reveal">期待你的<em>回音</em></h2>
+  <p class="deadline reveal">11月7日前告诉我，你是否赴约。</p>
+  <a class="cta reveal" id="acceptBtn" href="#rsvp"><span class="label">确认赴约</span><span class="arrow">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#f3ece1" stroke-width="1.2"><path d="M2 7h9M8 3.5 11.5 7 8 10.5"/></svg>
+  </span></a>
+  <p class="alt reveal">如时间不便，可另行约定——我随时。</p>
+  <div class="sign-block reveal">
+    <div class="who">邀请人 · 玛奇玛小姐的狗<br>2026 年 11 月 · 上海</div>
+    <div class="seal"><span>玛奇</span><span>玛小</span><span>姐惠</span><span>存</span></div>
+  </div>
+</section>
+
+<!-- ================= 接收邀请弹窗 ================= -->
+<div class="modal-mask" id="acceptModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="acceptTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="关闭">
+      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1.5 1.5l9 9M10.5 1.5l-9 9"/></svg>
+    </button>
+    <div class="modal-body">
+      <div class="modal-figure">
+        <div class="inner"><picture><source srcset="assets/makima-accept.webp" type="image/webp"><img src="assets/makima-accept.jpg" alt="玛奇玛小姐" width="800" height="800" loading="lazy" decoding="async"></picture></div>
+        <span class="stamp">ACCEPTED</span>
+      </div>
+      <span class="eyebrow" style="margin-bottom:0"><i></i>Invitation Accepted<i></i></span>
+      <h2 id="acceptTitle">您已接收邀请</h2>
+      <p>11月14日 · 上海，不见不散。<br>行程、票务与餐厅，我都会安排好——你只需准时出现。</p>
+      <div class="modal-date-row">2026 · 11 · 14</div>
+      <button class="modal-ok" id="modalOk" type="button">期待见面</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Zane 赞恩 · 致玛奇玛小姐的一日之约</span>
+  <span class="f-brand">Love in Shanghai · Autumn 2026</span>
+</footer>
+
+<script>
+  // 滚动入场动效（IntersectionObserver，避免 scroll 重排）
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold:.12, rootMargin:'0px 0px -6% 0px' });
+  document.querySelectorAll('.reveal, .rise').forEach(function(el, i){
+    el.style.transitionDelay = (i % 3) * 90 + 'ms';
+    io.observe(el);
+  });
+
+  // 确认赴约 → 弹出「您已接收邀请」
+  var mask = document.getElementById('acceptModal');
+  var acceptBtn = document.getElementById('acceptBtn');
+  var modalClose = document.getElementById('modalClose');
+  var modalOk = document.getElementById('modalOk');
+  function openModal(){
+    mask.classList.add('open');
+    mask.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    acceptBtn.classList.add('done');
+    var label = acceptBtn.querySelector('.label');
+    if(label){ label.textContent = '已确认赴约'; }
+    setTimeout(function(){ modalClose.focus(); }, 120);
+  }
+  function closeModal(){
+    mask.classList.remove('open');
+    mask.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    acceptBtn.focus();
+  }
+  acceptBtn.addEventListener('click', function(e){ e.preventDefault(); openModal(); });
+  modalClose.addEventListener('click', closeModal);
+  modalOk.addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){ if(e.target === mask){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && mask.classList.contains('open')){ closeModal(); } });
+</script>
+</body>
+</html>
